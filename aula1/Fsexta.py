@@ -21,9 +21,11 @@ name = input("enter your name:")
 age = input("enter your age:")
 age = int(age)
 #age limit for borrowing
-age_limit = 18
+younger_age = 20
+older_age = 30
 
-if age >= age_limit:
+
+if age >= younger_age and age <= older_age:
     print(f'{name} can borrow')
 else:
     print(f'{name} cant borrow')
