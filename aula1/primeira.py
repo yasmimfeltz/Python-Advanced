@@ -60,4 +60,11 @@ date_1 = True
 current_date = 2019
 imc = weight / height ** 2
 
-print(name, 'is', age, 'years old and her IMC is:',imc)
+print(name, 'is', age, 'years old and her IMC is', imc)
+print(f'{name} is {age} years old and her IMC is {imc: .2f}')
+print('{} is {} years old and her IMC is {:.2f}'.format(name, age, imc))
+
+# way of calling the variable and changing places several times
+print('{0} is {1} years old and her IMC is {2:.2f}'.format(name, age, imc))
+# ▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
+print('{2:.2f} {1} {0} is {1} years old and her IMC is {2:.2f}'.format(name, age, imc))
