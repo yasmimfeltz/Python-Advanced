@@ -1,26 +1,29 @@
 print('▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀NEW CLASS▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀')
 """
-IF, ELIF, ELSE 
+Relational operations: == > >= < <= != and IF, ELIF, ELSE 
+== equals
+> plus 
+>= plus or equals
+< minus
+<= minus or equals
+!= different
 """
 # examples
-if False:
-    print("true")
-    print("test 2")
-elif True:
-    print("now is true")
-    name = input("enter your name: ")
 
+var_1 = 'Yasmim' #str
+var_2 = 'Kalfeltz' #str
 
+expression = (var_1 != var_2)
+print(expression)
 
-    print(f"your name is {name}")
-elif False:
-    print("one more true")
-    print(22+22)
+#example2
+name = input("enter your name:")
+age = input("enter your age:")
+age = int(age)
+#age limit for borrowing
+age_limit = 18
+
+if age >= age_limit:
+    print(f'{name} can borrow')
 else:
-    print("it is not true")
-    print("hello")
-
-print('▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅')
-"""
-relational operations
-"""
+    print(f'{name} cant borrow')
