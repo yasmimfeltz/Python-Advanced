@@ -56,8 +56,8 @@ age = 15
 height = 1.60
 weight = 62
 it_is_bigger = age > 18
+date_1 = True
+current_date = 2019
+imc = weight / height ** 2
 
-print('Name:', name)
-print('Age', age)
-print('Height:', height)
-print('it_is_bigger:', it_is_bigger)
+print(name, 'is', age, 'years old and her IMC is:',imc)
