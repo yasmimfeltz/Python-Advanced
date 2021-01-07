@@ -49,8 +49,7 @@ accumulator = 1
 while counter <= 10:
     print(counter, accumulator)
 
-    if counter > 5:
-        break
-
-     accumulator = accumulator + counter
+    accumulator = accumulator + counter
     counter += 1
+else:
+    print("bye")
