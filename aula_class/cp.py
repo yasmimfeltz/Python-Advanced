@@ -1,9 +1,10 @@
-from classes.conta import Conta
+from aula_class.conta import Conta
+
 
 class ContaPoupanca(Conta):
     def sacar(self, valor):
         if self.saldo < valor:
-            print('Saldo insifuciente')
+            print('Saldo insuficiente')
             return
 
         self.saldo -= valor

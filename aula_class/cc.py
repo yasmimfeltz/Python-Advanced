@@ -1,7 +1,7 @@
-from classes.conta import Conta
+from aula_class.conta import Conta
+
 
 class ContaCorrente(Conta):
-
     def __init__(self, agencia, conta, saldo, limite=100):
         super().__init__(agencia, conta, saldo)
         self._limite = limite
@@ -10,10 +10,10 @@ class ContaCorrente(Conta):
         def limite(self):
             return self._limite
 
-    def sacar(selfself, valor):
+    def sacar(self, valor):
         if (self.saldo + self.limite) < valor:
-            print('Salso insuficiente')
+            print('Saldo insuficiente')
             return
 
         self.saldo -= valor
-        self.detalhes
+        self.detalhes()

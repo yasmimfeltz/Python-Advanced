@@ -1,4 +1,4 @@
-from classes import CarrinhoDeCompras, Produto
+from aula_class import CarrinhoDeCompras, Produto
 
 carrinho = CarrinhoDeCompras()
 
@@ -18,7 +18,7 @@ carrinho.lista_produto()
 print((carrinho.soma_total()))
 
 #########################################3
-from classes import Cliente
+from aula_class import Cliente
 
 cliente1 = Cliente('Luiz', 32)
 cliente1.insere_endereco('Belo Horizonte', 'MG')
@@ -43,7 +43,7 @@ del cliente1
 print()
 
 ################################################
-from classes import *
+from aula_class import *
 
 """
 associação - usa | agregação - tem | composição - é dono | Herança - é

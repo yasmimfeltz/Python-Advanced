@@ -1,4 +1,5 @@
-from abc import  ABC, abstractmethod
+from abc import ABC, abstractmethod
+
 
 class Conta(ABC):
     def __init__(self, agencia, conta, saldo):
@@ -23,9 +24,9 @@ class Conta(ABC):
         if not isinstance(valor, (int, float)):
             raise ValueError('Saldo precisa ser numérico')
 
-        self._saldo =valor
+        self._saldo = valor
 
-    def depositar(self,valor):
+    def depositar(self, valor):
         if not isinstance(valor, (int, float)):
             raise ValueError("valor do depósito precisa ser numerico")
 
@@ -33,8 +34,8 @@ class Conta(ABC):
         self.detalhes()
 
     def detalhes(self):
-        print(f'Agência: {self.agencia}', end='')
-        print(f'Conta: {self.conta}', end='')
+        print(f'Agência: {self.agencia}', end=' ')
+        print(f'Conta: {self.conta}', end=' ')
         print(f'Saldo: {self.saldo}')
 
     @abstractmethod
